@@ -26,5 +26,3 @@ This is a restaurant web application that allows users to browse menu items, add
 - Shemoa Mohamed 
 - Rewida Tark
 
-## 🔗 GitHub Repository
-(سيبيه زي ما هو)

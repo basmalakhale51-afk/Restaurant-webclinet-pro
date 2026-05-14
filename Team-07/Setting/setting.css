@@ -1,0 +1,658 @@
+/* ======================
+   DARK MODE
+====================== */
+
+.dark {
+
+    background-color: #111;
+    color: white;
+}
+
+/* Navbar */
+/* Header */
+
+.dark header {
+
+    background-color: #000 !important;
+}
+
+/* أي container فوق */
+
+.dark .header,
+.dark .navbar,
+.dark .nav-container {
+
+    background-color: #000 !important;
+}
+.dark nav {
+
+    background-color: #000 !important;
+}
+
+/* Navbar Links */
+
+.dark nav a {
+
+    color: white !important;
+}
+
+/* Hover Effect */
+
+.dark nav a:hover {
+
+    color: #ffcc70 !important;
+}
+
+/* Logo */
+
+.dark .logo {
+
+    color: #ff6b6b;
+}
+
+/* Cards */
+
+.dark .card,
+.dark .menu-card,
+.dark .cart-item-card,
+.dark .details-container {
+
+    background-color: #222;
+
+    color: white;
+}
+
+/* Buttons */
+
+.dark button {
+
+    background-color: #333;
+
+    color: white;
+}
+
+/* Text */
+
+.dark h1,.dark h2,.dark h3,.dark p,.dark span {
+
+    color: white;
+}
+
+/* ======================
+   NAVBAR
+====================== */
+nav {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+/* ======================
+   DARK MODE BUTTON
+====================== */
+
+#themeBtn {
+
+    position: absolute;
+
+    top: 15px;
+
+    right: 25px;
+
+    width: 42px;
+
+    height: 42px;
+
+    border-radius: 50%;
+
+    border: none;
+
+    background: rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(8px);
+
+    color: #ffd43b;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition: 0.3s;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* Hover */
+
+#themeBtn:hover {
+
+    transform: scale(1.1);
+
+    background: rgba(255,255,255,0.15);
+}
+/* ======================
+   INVOICE BOX DARK MODE
+====================== */
+
+.dark .invoice-box {
+
+    background-color: #222 !important;
+
+    color: white !important;
+
+    border: 1px solid #444;
+
+    box-shadow: 0 5px 20px rgba(255,255,255,0.08);
+}
+
+/* كل الكلام جواها */
+
+.dark .invoice-box h3,
+.dark .invoice-box span,
+.dark .invoice-box p {
+
+    color: white !important;
+}
+
+/* الخط */
+
+.dark .invoice-box hr {
+
+    border-color: #555;
+}
+
+/* زرار الـ Checkout */
+
+.dark .checkout-btn {
+
+    background-color: #ff6b6b;
+
+    color: white;
+
+    border: none;
+}
+
+.dark .checkout-btn:hover {
+
+    background-color: #ff5252;
+}
+
+/* ======================
+   ORDER HISTORY DARK MODE
+====================== */
+
+/* العنوان */
+
+.dark h1 {
+
+    color: white;
+}
+
+/* History Container */
+
+.dark #historyContainer {
+
+    background-color: #222;
+
+    color: white;
+
+    border-radius: 10px;
+
+    padding: 20px;
+}
+
+/* أي كارد جوه الهيستوري */
+
+.dark .history-card,
+.dark .order-card {
+
+    background-color: #333;
+
+    color: white;
+
+    border: 1px solid #444;
+
+    border-radius: 10px;
+
+    padding: 15px;
+
+    margin-bottom: 15px;
+}
+
+/* الكلام */
+
+.dark .history-card h3,
+.dark .history-card p,
+.dark .order-card h3,
+.dark .order-card p {
+
+    color: white;
+}
+
+/* زرار المسح */
+
+.dark #clearOrdersBtn {
+
+    background-color: #ff4d4d;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* Hover */
+
+.dark #clearOrdersBtn:hover {
+
+    background-color: #e60000;
+
+    transform: scale(1.05);
+}
+
+/* ======================
+   CONTACT SECTION DARK MODE
+====================== */
+
+.dark .contact-section {
+
+    background-color: #111;
+
+    color: white;
+}
+
+/* ======================
+   CONTACT FORM
+====================== */
+
+.dark .contact-form {
+
+    background-color: #222;
+
+    color: white;
+
+    border: 1px solid #444;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(255,255,255,0.08);
+}
+
+/* Titles */
+
+.dark .contact-form h1,
+.dark .contact-info h2 {
+
+    color: white;
+}
+
+/* Labels */
+
+.dark .contact-form label {
+
+    color: #ddd;
+}
+/* ======================
+   CONTACT SECTION
+====================== */
+
+.dark .contact-section {
+
+    background-color: #222;
+
+    border: 1px solid #444;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    box-shadow: 0 5px 20px rgba(255,255,255,0.08);
+
+    color: white;
+
+    display: flex;
+
+    gap: 40px;
+}
+
+/* نشيل الخلفيات الفردية */
+
+.dark .contact-form,
+.dark .contact-info {
+
+    background: transparent;
+
+    border: none;
+
+    box-shadow: none;
+}
+
+/* العناوين */
+
+.dark .contact-form h1,
+.dark .contact-info h2 {
+
+    color: white;
+}
+
+/* Labels */
+
+.dark label {
+
+    color: #ddd;
+}
+
+/* Inputs */
+
+.dark input,
+.dark textarea {
+
+    background-color: #333;
+
+    color: white;
+
+    border: 1px solid #555;
+}
+
+/* Placeholder */
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+
+    color: #bbb;
+}
+
+/* Icons */
+
+.dark i {
+
+    color: #ffcc70;
+}
+
+/* Button */
+
+.dark .contact-form button {
+
+    background-color: #ff6b6b;
+
+    color: white;
+
+    border: none;
+
+    transition: 0.3s;
+}
+
+.dark .contact-form button:hover {
+
+    background-color: #ff5252;
+
+    transform: scale(1.05);
+}
+
+/* Map */
+
+.dark .contact-info img {
+
+    border-radius: 15px;
+
+    margin-top: 15px;
+}
+
+/* ======================
+   HERO SECTION DARK MODE
+====================== */
+.dark .hero {
+
+    background:
+    linear-gradient(rgba(0,0,0,0.6),
+    rgba(0,0,0,0.6)),
+
+    url("../image/hero.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    color: white;
+
+    padding: 120px 20px;
+
+    text-align: center;
+}
+
+/* Hero Title */
+
+.dark .hero h1 {
+
+    color: white;
+
+    font-size: 55px;
+}
+
+/* Hero Paragraph */
+
+.dark .hero p {
+
+    color: #ccc;
+
+    font-size: 20px;
+
+    margin-top: 15px;
+}
+
+/* Hero Button */
+
+.dark .btn-primary {
+
+    background-color: #ff6b6b;
+
+    color: white;
+
+    padding: 14px 30px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    display: inline-block;
+
+    margin-top: 25px;
+
+    transition: 0.3s;
+}
+
+/* Hover */
+
+.dark .btn-primary:hover {
+
+    background-color: #ff5252;
+
+    transform: scale(1.05);
+}
+
+/* ======================
+   FEATURES SECTION
+====================== */
+
+.dark .features {
+
+    background-color: #111;
+
+    color: white;
+
+    padding: 80px 20px;
+
+    text-align: center;
+}
+
+/* Features Title */
+
+.dark .features h2 {
+
+    color: white;
+
+    margin-bottom: 40px;
+
+    font-size: 40px;
+}
+
+/* Grid */
+
+.dark .feature-grid {
+
+    display: flex;
+
+    gap: 25px;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+/* Feature Cards */
+
+.dark .feature-card {
+
+    background-color: #222;
+
+    border: 1px solid #444;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    width: 300px;
+
+    color: white;
+
+    transition: 0.3s;
+
+    box-shadow: 0 5px 15px rgba(255,255,255,0.08);
+}
+
+/* Hover */
+
+.dark .feature-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 20px rgba(255,255,255,0.12);
+}
+
+/* Card Title */
+
+.dark .feature-card h3 {
+
+    color: #ff6b6b;
+
+    margin-bottom: 15px;
+}
+
+/* Card Paragraph */
+
+.dark .feature-card p {
+
+    color: #ccc;
+
+    line-height: 1.7;
+}
+/* DARK MODE */
+
+.dark body {
+
+    background-color: #111;
+}
+
+/* الفورم */
+
+.dark .checkout-container {
+
+    background-color: #1f1f1f;
+
+    color: white;
+
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+/* العنوان */
+
+.dark .checkout-container h1 {
+
+    color: #ff6b81;
+}
+
+/* الليبل */
+
+.dark .checkout-container label {
+
+    color: white;
+}
+
+/* الانبوت والسليكت */
+
+.dark .checkout-container input,
+.dark .checkout-container select {
+
+    background-color: #2b2b2b;
+
+    color: white;
+
+    border: 1px solid #444;
+}
+
+/* placeholder */
+
+.dark .checkout-container input::placeholder {
+
+    color: #bbb;
+}
+
+/* لما تدوسي على الانبوت */
+
+.dark .checkout-container input:focus,
+.dark .checkout-container select:focus {
+
+    border-color: #ff6b81;
+
+    box-shadow: 0 0 10px rgba(255,107,129,0.5);
+}
+
+/* التوتال */
+
+.dark .checkout-container h3 {
+
+    color: #ff6b81;
+}
+
+/* الزرار */
+
+.dark .checkout-container button {
+
+    background-color: #ff6b81;
+
+    color: white;
+}
+
+.dark .checkout-container button:hover {
+
+    background-color: #ff4f6d;
+}
+
+

@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;   
+}
+body { 
+    font-family: 'Segoe UI', sans-serif;
+    background: #f8f9fa;
+    color: #333; 
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100; 
+}
+.navbar .logo { 
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ff6b6b; 
+}
+.navbar nav a { 
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 600;
+    color: #555; 
+}
+.navbar nav a.active, .navbar nav a:hover { 
+    color: #ff6b6b; 
+}
+
+/* Layout الرئيسي: عمودين */
+.cart-layout {
+    display: flex;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    align-items: flex-start;
+}
+
+/* قسم المنتجات */
+.cart-items-section {
+    flex: 2; 
+}
+.cart-items-section h2 {
+    margin-bottom: 20px;
+    font-size: 28px; 
+}
+.items-list { 
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+/* كارت المنتج */
+.cart-item-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.04);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item-info h4 { 
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.item-info p {
+    color: #777;
+    font-size: 15px; 
+}
+
+.controls { 
+    display: flex;
+    align-items: center;
+    gap: 12px; 
+}
+.controls button {
+    width: 36px;
+    height: 36px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.2s;
+}
+.controls button:hover { background: #f0f0f0; }
+.controls span { font-weight: 600; min-width: 20px; text-align: center; }
+.controls .remove-btn { background: #ff4757; color: #fff; border: none; padding: 8px 12px; border-radius: 8px; font-size: 13px; }
+
+/* قسم الفاتورة (ثابت أثناء السكرول) */
+.invoice-section { flex: 1; position: sticky; top: 100px; }
+.invoice-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+.invoice-box h3 { text-align: center; margin-bottom: 25px; font-size: 22px; font-weight: 600; }
+
+.invoice-details .row { display: flex; justify-content: space-between; margin: 15px 0; color: #555; font-size: 16px; }
+.invoice-details .total { font-weight: 700; font-size: 20px; color: #000; border-top: 1px solid #eee; padding-top: 15px; margin-top: 10px; }
+
+.checkout-btn {
+    width: 100%; padding: 16px; background: #111; color: #fff; border: none;
+    border-radius: 10px; font-size: 16px; font-weight: 600; cursor: pointer; margin-top: 20px;
+}
+.checkout-btn:disabled { background: #ccc; cursor: not-allowed; }
+
+/* رسالة السلة الفاضية */
+.empty-msg { text-align: center; padding: 40px; color: #888; font-size: 18px; background: #fff; border-radius: 14px; }
+
+/* Footer */
+footer { background: #111; color: #fff; text-align: center; padding: 25px; margin-top: 50px; }
+
+/* Responsive للموبايل */
+@media (max-width: 768px) {
+    .cart-layout { flex-direction: column; }
+    .invoice-section { position: static; width: 100%; }
+}

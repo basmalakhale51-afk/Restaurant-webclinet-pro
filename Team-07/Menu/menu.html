@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bites & Vibes - Menu</title>
+    <link rel="stylesheet" href="../Home/style.css">
+    <link rel="stylesheet" href="../Setting/setting.css">
+</head>
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+        <div class="logo">🍔 Bites & Vibes</div>
+
+        <nav>
+            <a href="../Home/index.html">Home</a>
+            <a href="menu.html" class="active">Menu</a>
+            <a href="../Cart/cart.html">Cart</a>
+            <a href="../History/history.html">History</a>
+            <a href="../Contact/contact.html">Contact Us</a>
+            <button id="themeBtn">🌙</button>
+        </nav>
+    </header>
+
+    <!-- ================= MENU ================= -->
+    <section class="menu-container">
+        <h2>Our Popular Menu</h2>
+
+        <div class="grid-container" id="menu-grid"></div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <p>&copy; 2026 Bites & Vibes Restaurant. All rights reserved.</p>
+    </footer>
+
+    <!-- ================= SCRIPTS ================= -->
+    <script src="data.js"></script>
+    <script src="../Cart/cart.js"></script>
+
+    <script>
+        // عرض المنتجات في الصفحة
+        const menuGrid = document.getElementById("menu-grid");
+
+        menuItems.forEach(item => {
+            menuGrid.innerHTML += 
+                <div class="product-card">
+                    <h3>${item.name}</h3>
+                    <p>${item.price} EGP</p>
+
+                    <button onclick="addToCart(${item.id})">
+                        Add to Cart 🛒
+                    </button>
+                </div>
+            ;
+        });
+    </script>
+    <script src="../Setting/setting.js"></script>
+</body>
+</html>
